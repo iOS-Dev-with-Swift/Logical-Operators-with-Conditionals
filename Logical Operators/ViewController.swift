@@ -35,6 +35,25 @@ class ViewController: UIViewController {
         eq1.text = "A or B = \(A || B)"
         eq2.text = "A and not B = \(switchA.isOn && !switchB.isOn)"
         eq3.text = "(B and not A) or B = \((B && !A) || B)"
+        
+        if (A || B) {
+            eq1.backgroundColor = UIColor.green
+        }
+        else {
+            eq1.backgroundColor = UIColor.red
+        }
+        if (switchA.isOn && !switchB.isOn) {
+            eq2.backgroundColor = UIColor.green
+        }
+        else {
+            eq2.backgroundColor = UIColor.red
+        }
+        if ((B && !A) || B) {
+            eq3.backgroundColor = UIColor.green
+        }
+        else {
+            eq3.backgroundColor = UIColor.red
+        }
     }
     
     @IBAction func switchBChanged(_ sender: Any) {
@@ -43,6 +62,25 @@ class ViewController: UIViewController {
         eq1.text = "A or B = \(A || B)"
         eq2.text = "A and not B = \(switchA.isOn && !switchB.isOn)"
         eq3.text = "(B and not A) or B = \((B && !A) || B)"
+        
+        if (A || B) {
+            eq1.backgroundColor = UIColor.green
+        }
+        else {
+            eq1.backgroundColor = UIColor.red
+        }
+        if (switchA.isOn && !switchB.isOn) {
+            eq2.backgroundColor = UIColor.green
+        }
+        else {
+            eq2.backgroundColor = UIColor.red
+        }
+        if ((B && !A) || B) {
+            eq3.backgroundColor = UIColor.green
+        }
+        else {
+            eq3.backgroundColor = UIColor.red
+        }
     }
 
 
